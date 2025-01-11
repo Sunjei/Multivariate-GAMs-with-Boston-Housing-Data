@@ -66,7 +66,7 @@ shapiro.test(residuals(gam_model))
 ![스크린샷 2025-01-11 05-40-30](https://github.com/user-attachments/assets/fa0ee1b6-3037-4151-ba36-4982e6a00cdc)
 
 
-Calculating Mean Squared Error (MSE) &
+Creating a Model with Adjusted Homoscedasticity &
 Residuals vs. Fitted Values Plot
 
 ```
