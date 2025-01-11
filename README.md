@@ -30,6 +30,8 @@ method = "REML")
 summary(gam_model)
 par(mfrow = c(2, 3))  # Arrange plots in a grid
 plot(gam_model, se = TRUE, shade = TRUE)
+cat("Adjusted R-squared: ", summary(gam_model)$r.sq, "\n")
+
 
 ```
 
