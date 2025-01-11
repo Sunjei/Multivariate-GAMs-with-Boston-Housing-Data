@@ -115,6 +115,21 @@ gam_cv
 
 ```
 
+```
+# Shapiro-Wilk Test
+shapiro.test(residuals(gam_model))
+
+# Q-Q Plot
+qqnorm(residuals(gam_model))
+qqline(residuals(gam_model), col = "red")
+
+# Scale-Location Plot
+plot(gam_model, resid = TRUE, pch = 20,
+     ylab = "Standardized Residuals",
+     main = "Scale-Location Plot")
+
+```
+
 ![스크린샷 2025-01-11 05-40-40](https://github.com/user-attachments/assets/53b9bab6-ebf5-49d0-b0d7-630afbbd65e8)
 
 
