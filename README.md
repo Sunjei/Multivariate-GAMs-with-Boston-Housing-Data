@@ -121,8 +121,9 @@ hist(residuals(gam_model), breaks = 20, col = "skyblue", main = "Histogram of Re
 
 ![스크린샷 2025-01-11 05-40-58](https://github.com/user-attachments/assets/8d869e00-41e2-4de5-974d-7b76a7034829)
 
+```
 check_model(gam_model)
-
+```
 
 ![스크린샷 2025-01-11 05-41-04](https://github.com/user-attachments/assets/fdb34007-8ddf-4a74-8a71-6624395edb3a)
 
