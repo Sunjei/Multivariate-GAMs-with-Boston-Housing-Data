@@ -1,5 +1,9 @@
 # Multivariate-GAMs-with-Boston-Housing-Data
 
+
+Installing Required Packages &
+Loading Boston Housing Dataset &
+Loading Required Libraries
 ```
 
 install.packages(mgcv)
@@ -23,6 +27,8 @@ require(ggGAM)
 
 ```
 
+Building the Generalized Additive Model (GAM) &
+Visualizing the Smoothing Functions
 ```
 gam_model <- gam(medv ~ s(lstat) + s(rm) + s(dis) + s(nox) + s(crim),
 data = Boston,
@@ -36,8 +42,9 @@ cat("Adjusted R-squared: ", summary(gam_model)$r.sq, "\n")
 ```
 
 
-
 ![스크린샷 2025-01-11 05-40-25](https://github.com/user-attachments/assets/5f6b951a-ac65-4877-b11d-9cf1a1945cc0)
+
+Residual Analysis
 
 ```
 plot(gam_model$residuals, ylab = "Residuals")
@@ -57,6 +64,10 @@ shapiro.test(residuals(gam_model))
 ```
 
 ![스크린샷 2025-01-11 05-40-30](https://github.com/user-attachments/assets/fa0ee1b6-3037-4151-ba36-4982e6a00cdc)
+
+
+Calculating Mean Squared Error (MSE) &
+Residuals vs. Fitted Values Plot
 
 ```
 install.packages("lmtest")
