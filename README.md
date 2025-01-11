@@ -115,6 +115,8 @@ gam_cv
 
 ```
 
+Model Diagnostics and Residual Analysis
+
 ```
 # Shapiro-Wilk Test
 shapiro.test(residuals(gam_model))
@@ -133,7 +135,6 @@ plot(gam_model, resid = TRUE, pch = 20,
 ![스크린샷 2025-01-11 05-40-40](https://github.com/user-attachments/assets/53b9bab6-ebf5-49d0-b0d7-630afbbd65e8)
 
 
-Model Diagnostics and Residual Analysis
 ```
 install.packages("performance")
 library(performance)
